@@ -21,17 +21,17 @@ for i in range(100):
 'Done!!!'
 
 
-left_column,right_column = st.beta_columns(2)
-button = left_column.button('右カラムに文字を表示')
-if button:
-    right_column.write('右だよ～ん')
+#left_column,right_column = st.beta_columns(2)
+#button = left_column.button('右カラムに文字を表示')
+#if button:
+#    right_column.write('右だよ～ん')
 
-expander1 = st.beta_expander('問合せ1')
-expander1.write('問合せ1の回答')
-expander2 = st.beta_expander('問合せ2')
-expander2.write('問合せ2の回答')
-expander3 = st.beta_expander('問合せ3')
-expander3.write('問合せ3の回答')
+#expander1 = st.beta_expander('問合せ1')
+#expander1.write('問合せ1の回答')
+#expander2 = st.beta_expander('問合せ2')
+#expander2.write('問合せ2の回答')
+#expander3 = st.beta_expander('問合せ3')
+#expander3.write('問合せ3の回答')
 
 
 text = st.text_input('あなたの趣味は？')
@@ -53,18 +53,14 @@ condition = st.slider('あなたの今の調子は？',0,100,50)
 #st.dataframe(df.style.highlight_max(axis=0),width=100,height=100)
 #st.table(df.style.highlight_max(axis=0))
 
-"""
-df= pd.DataFrame(
-    np.random.rand(100,2)/[50,50]+[35.69,139.70],
-    columns=['lat','lon']
-)
-"""
+#df= pd.DataFrame(
+#    np.random.rand(100,2)/[50,50]+[35.69,139.70],
+#    columns=['lat','lon']
+#)
+
 #st.dataframe(df.style.highlight_max(axis=0),width=100,height=100)
 #st.line_chart(df)
 #st.area_chart(df)
 #st.bar_chart(df)
 
 #st.map(df)
-
-
-
