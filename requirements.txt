@@ -1,1 +1,5 @@
 streamlit
+set_child_watcher
+pandas
+yfinance
+altair
