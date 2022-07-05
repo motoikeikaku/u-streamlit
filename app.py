@@ -8,7 +8,7 @@ st.title('米国株価可視化アプリ')
 
 st.sidebar.write("""
 # GAFA株価
-こちらは株価可視化ツールです。以下のオプションから表示日数を選択してください。
+こちらは株価可視化ツールです。以下のオプションから表示日数範囲を選択してください。
 """)
 
 st.sidebar.write("""
@@ -81,6 +81,6 @@ try:
         st.altair_chart(chart,use_container_width=True)
 except:
     st.error(
-        'エラーが起きました。。。'
+        'エラーが起きました。'
     )
 
